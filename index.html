@@ -22,14 +22,18 @@
       <a class="logo" href="#">Avion</a>
       <ul class="header-list">
         <li class="header-link">
-          <svg class="search" width="16" height="16">
-            <use href="./images/icons.svg#icon-search"></use>
-          </svg>
+          <a href="#" target="_blank">
+            <svg class="search" width="16" height="16">
+              <use href="./images/icons.svg#icon-search"></use>
+            </svg>
+          </a>
         </li>
         <li class="header-link">
-          <svg class="shopping-cart" width="16" height="16">
-            <use href="./images/icons.svg#icon-burger"></use>
-          </svg>
+          <a href="#" target="_blank">
+            <svg class="shopping-cart" width="16" height="16">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </a>
         </li>
       </ul>
     </header>
@@ -45,7 +49,9 @@
             retail brand with nice fonts, tasteful colors and a beautiful way to
             display things digitally using modern web technologies.
           </p>
-          <button class="main-page-button">View collection</button>
+          <button type="button" class="main-page-button">
+            View collection
+          </button>
         </div>
       </section>
 
@@ -208,26 +214,133 @@
             >
             <p class="popular-item-text">£250</p>
           </li>
-          <!-- <li class="popular-item">
-            <img
-              class="popular-image"
-              srcset="
-                ./images/popular-products/image4.jpg    1x,
-                ./images/popular-products/image4@2x.jpg 2x
-              "
-              src="./images/popular-products/image4.jpg"
-              alt="ceramics-image"
-            />
-            <a class="popular-item-title" href="#" target="_blank"
-              >The Dandy chair</a
-            >
-            <p class="popular-item-text">£250</p> -->
-          </li>
         </ul>
-        <button class="ceramics-button">View collection</button>
+        <button type="button" class="ceramics-button">View collection</button>
+      </section>
+
+      <section class="signup container">
+        <h2 class="signup-title">Join the club and get the benefits</h2>
+        <p class="signup-text">
+          Sign up for our newsletter and receive exclusive offers on new ranges,
+          sales, pop up stores and more
+        </p>
+        <div class="signup-submit">
+          <input
+            class="signup-input"
+            type="email"
+            placeholder="your@email.com"
+          />
+          <button class="signup-button" type="submit">Sign up</button>
+        </div>
+      </section>
+
+      <section class="studio">
+        <div class="container">
+          <h2 class="studio-title">
+            From a studio in London to a global brand with <br />over 400
+            outlets
+          </h2>
+          <p class="studio-text">
+            When we started Avion, the idea was simple. Make high quality
+            furniture affordable and available for the mass market.<br /><br />Handmade,
+            and lovingly crafted furniture and homeware is what we live, breathe
+            and design so our Chelsea boutique become the hotbed for the London
+            interior design community.
+          </p>
+          <button class="studio-button" type="button">Get in touch</button>
+        </div>
+        <img
+          srcset="./images/studio/image.jpg 1x, ./images/studio/image@2x.jpg 2x"
+          src="./images/studio/image.jpg"
+          class="studio-image"
+          alt="studio-image"
+          
+        />
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer container">
+      <div class="footer-block">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <p class="footer-item-text">Categories</p>
+            <ul class="fit-list">
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Crockery</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Furniture</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Homeware</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Plant pots</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Chairs</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Crockery</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-item">
+            <p class="footer-item-text">Menu</p>
+            <ul class="fit-list">
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank"
+                  >New arrivals</a
+                >
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank"
+                  >Best sellers</a
+                >
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank"
+                  >Recently viewed</a
+                >
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank"
+                  >Popular this week</a
+                >
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank"
+                  >All products</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer-item">
+            <p class="footer-item-text">Our company</p>
+            <ul class="fit-list">
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">About us</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Vacancies</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Contact us</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank">Privacy</a>
+              </li>
+              <li class="fit-item">
+                <a class="fit-item-src" href="#" target="_blank"
+                  >Returns policy</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
