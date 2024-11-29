@@ -89,6 +89,11 @@ img {
   color: #ffffff;
   background-color: rgba(249, 249, 249, 0.15);
   border: none;
+  transition: background-color 300ms ease-in-out;
+}
+
+.main-page-button:hover, .main-page-button:focus {
+  background-color: rgba(249, 249, 249, 0.3);
 }
 
 .utilities {
@@ -154,6 +159,12 @@ img {
 .ceramics-image {
   width: 100%;
   margin-bottom: 24px;
+  transition: width 300ms ease-in-out, margin-bottom 300ms ease-in-out;
+}
+
+.ceramics-image:hover, .ceramics-image:focus {
+  width: 102%;
+  margin-bottom: 20px;
 }
 
 .ceramics-title {
@@ -191,6 +202,11 @@ img {
   color: #2a254b;
   background-color: #f9f9f9;
   border: none;
+  transition: background-color 300ms ease-in-out;
+}
+
+.ceramics-button:hover, .ceramics-button:focus {
+  background-color: #EBE8F4;
 }
 
 .popular {
@@ -215,6 +231,12 @@ img {
 .popular-image {
   height: 251px;
   margin-bottom: 24px;
+  transition: height 300ms ease-in-out, margin-bottom 300ms ease-in-out;
+}
+
+.popular-image:hover, .popular-image:focus {
+  height: 255px;
+  margin-bottom: 20px;
 }
 
 .popular-title {
@@ -252,6 +274,11 @@ img {
   color: #2a254b;
   background-color: #f9f9f9;
   border: none;
+  transition: background-color 300ms ease-in-out;
+}
+
+.popular-button:hover, .popular-button:focus {
+  background-color: #EBE8F4;
 }
 
 .signup {
@@ -288,7 +315,11 @@ img {
   line-height: 1.5;
   color: rgb(42, 37, 75);
   outline: transparent;
+  transition: background-color 300ms ease-in-out;
+}
 
+.signup-input:hover, .signup-input:focus {
+  background-color: #EBE8F4;
 }
 
 .signup-input::placeholder {
@@ -310,6 +341,11 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  transition: background-color 300ms ease-in-out;
+}
+
+.signup-button:hover, .signup-button:focus {
+  background-color: #1E193E;
 }
 
 .signup-submit {
@@ -351,6 +387,11 @@ img {
   background-color: #f9f9f9;
   border: none;
   margin-bottom: 38px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.studio-button:hover, .studio-button:focus {
+  background-color: #EBE8F4;
 }
 
 .studio-image {
@@ -361,5 +402,111 @@ img {
 .footer {
   padding-top: 40px;
   padding-bottom: 20px;
+  background-color: #2A254B;
 }
 
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 96px;
+  row-gap: 40px;
+}
+
+.footer-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.fit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fit-item-src {
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  transition: color 300ms ease-in-out;
+}
+
+.fit-item-src:hover, .fit-item-src:focus {
+  color: #f9f9f9;
+}
+
+.footer-submit-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.footer-submit {
+  display: flex;
+  gap: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #4E4D93;
+}
+
+.footer-input {
+  width: 224px;
+  height: 56px;
+  background-color: rgba(249, 249, 249, 0.15);
+  padding-left: 32px;
+  border: none;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  outline: transparent;
+  transition: background-color 300ms ease-in-out;
+}
+
+.footer-input:hover, .footer-input:focus {
+  background-color: rgba(249, 249, 249, 0.3);
+}
+
+.footer-input::placeholder {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+}
+
+.footer-button {
+  width: 118px;
+  height: 56px;
+  background-color: #ffffff;
+  color: #2A254B;
+  font-family: "Satoshi", sans-serif;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: background-color 300ms ease-in-out;
+}
+
+.footer-button:hover, .footer-button:focus {
+  background-color: #f9f9f9;
+}
+
+.footer-copywrite {
+  font-family: "Satoshi", sans-serif;
+  font-style: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
