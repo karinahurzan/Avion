@@ -34,7 +34,16 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 80px;
+  }
+}
+
 .logo {
+  font-weight: 400;
+  line-height: 1.4;
   font-size: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -45,6 +54,22 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 390px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    max-width: 1440px;
+    padding: 0 28px;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .burger {
+    display: none;
+  }
 }
 
 .header-list {
@@ -53,6 +78,40 @@ img {
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.cart-user {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .cart-user {
+    display: flex;
+  }
+}
+
+.nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 44px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .nav-item-src {
+    font-family: "Satoshi", sans-serif;
+    font-style: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #726E8D;
+    cursor: pointer;
+  }
 }
 
 .main-page {
