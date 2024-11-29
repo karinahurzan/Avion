@@ -830,6 +830,10 @@ img {
   text-align: center;
 }
 
+.footer-block {
+  margin-top: 20px;
+}
+
 .footer-block-list {
   display: none;
 }
@@ -843,7 +847,6 @@ img {
   }
 
   .footer-block {
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
