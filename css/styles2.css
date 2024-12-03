@@ -60,7 +60,7 @@ img {
 @media screen and (min-width: 1440px) {
   .header {
     max-width: 1440px;
-    padding: 0 28px;
+    padding: 0 80px;
   }
 
   .burger {
