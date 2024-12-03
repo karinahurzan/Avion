@@ -417,7 +417,7 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(/images/sign-up/image-phone.jpg);
+  background-image: url(../images/sign-up/image-phone.jpg);
 }
 
 .signup-container {
@@ -427,13 +427,13 @@ img {
 
 @media screen and (min-resolution: 192dpi) {
   .signup {
-    background-image: url(/images/sign-up/image-phone@2x.jpg);
+    background-image: url(../images/sign-up/image-phone@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .signup {
-    background-image: url(/images/sign-up/image.jpg);
+    background-image: url(../images/sign-up/image.jpg);
   }
 
   .signup-container {
@@ -447,7 +447,7 @@ img {
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .signup {
-    background-image: url(/images/sign-up/image@2x.jpg);
+    background-image: url(../images/sign-up/image@2x.jpg);
   }
 }
 
