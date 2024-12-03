@@ -55,6 +55,9 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 390px;
+  padding: 0 24px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1440px) {
@@ -165,6 +168,8 @@ img {
 .main-page-block {
   display: flex;
   flex-direction: column;
+  padding-right: 24px;
+  padding-left: 24px;
   padding-top: 28px;
   padding-bottom: 46px;
 }
