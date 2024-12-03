@@ -182,11 +182,14 @@ img {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .product-photo {
     flex-shrink: 0;
     width: 721px;
+    margin: auto;
   }
 }
 
