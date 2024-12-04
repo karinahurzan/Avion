@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles4.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400&f[]=satoshi@400&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <ul class="header-list cart-user">
+          <li class="header-link">
+            <a href="#" target="_blank">
+              <svg class="shopping-cart" width="16" height="16">
+                <use href="./images/icons.svg#icon-shopping-cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-link">
+            <a href="#" target="_blank">
+              <svg class="user" width="16" height="16">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="logo" href="index3.html" target="_blank">Avion</a>
+        <ul class="header-list">
+          <li class="header-link">
+            <a href="#" target="_blank">
+              <svg class="search" width="16" height="16">
+                <use href="./images/icons.svg#icon-search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-link">
+            <a href="#" target="_blank">
+              <svg class="burger" width="16" height="16">
+                <use href="./images/icons.svg#icon-burger"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-item-src" href="#">All products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-src" href="#">Plant pots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-src" href="#">Ceramics</a>
+          </li>
+          <li class="nav-item"><a class="nav-item-src" href="#">Tables</a></li>
+          <li class="nav-item"><a class="nav-item-src" href="#">Chairs</a></li>
+          <li class="nav-item">
+            <a class="nav-item-src" href="#">Crockery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-src" href="#">Tableware</a>
+          </li>
+          <li class="nav-item"><a class="nav-item-src" href="#">Cutlery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-page container">
+        <h1 class="main-page-title">Your shopping cart</h1>
+        <ul class="characteristic-list">
+            <li class="characteristic-iten">Product</li>
+            <li class="characteristic-iten">Quantity</li>
+            <li class="characteristic-iten">Total</li>
+        </ul>
+        <ul class="products">
+          <li class="product">
+            <img
+              class="product-image"
+              srcset="
+                ./images/shopping-cart/image1.jpg    1x,
+                ./images/shopping-cart/image1@2x.jpg 2x
+              "
+              src="./images/shopping-cart/image1.jpg"
+              alt="product-image"
+            />
+            <div class="product-block">
+              <div class="text-counter">
+                <div class="product-text">
+                  <h3 class="product-title">Graystone vase</h3>
+                  <p class="product-description">
+                    A timeless ceramic vase with a tri color grey glaze.
+                  </p>
+                  <p class="product-price">£85</p>
+                </div>
+                <div class="counter">
+                  <button class="counter-button" type="button">-</button>
+                  <span class="counter-value">1</span>
+                  <button class="counter-button" type="button">+</button>
+                </div>
+              </div>
+              <div>
+                <p class="product-total-price">£85</p>
+              </div>
+            </div>
+          </li>
+          <li class="product">
+            <img
+              class="product-image"
+              srcset="
+                ./images/shopping-cart/image2.jpg    1x,
+                ./images/shopping-cart/image2@2x.jpg 2x
+              "
+              src="./images/shopping-cart/image2.jpg"
+              alt="product-image"
+            />
+            <div class="product-block">
+              <div class="text-counter">
+                <div class="product-text">
+                  <h3 class="product-title">Basic white vase</h3>
+                  <p class="product-description">
+                    Beautiful and simple this is one for the classics.
+                  </p>
+                  <p class="product-price">£125</p>
+                </div>
+                <div class="counter">
+                  <button class="counter-button" type="button">-</button>
+                  <span class="counter-value">1</span>
+                  <button class="counter-button" type="button">+</button>
+                </div>
+              </div>
+              <p class="product-total-price">£125</p>
+            </div>
+          </li>
+        </ul>
+        <div class="total">
+          <h2 class="total-title">Subtotal</h2>
+          <p class="total-price">£210</p>
+        </div>
+        <p class="taxes">Taxes and shipping are calculated at checkout</p>
+        <button class="product-button" type="button">Go to checkout</button>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <p class="footer-item-text">Menu</p>
+          <ul class="fit-list">
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">New arrivals</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Best sellers</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank"
+                >Recently viewed</a
+              >
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank"
+                >Popular this week</a
+              >
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">All products</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer-item">
+          <p class="footer-item-text">Categories</p>
+          <ul class="fit-list">
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Crockery</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Furniture</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Homeware</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Plant pots</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Chairs</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Crockery</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer-item">
+          <p class="footer-item-text">Our company</p>
+          <ul class="fit-list">
+            <li class="fit-item">
+              <a class="fit-item-src" href="index3.html" target="_blank"
+                >About us</a
+              >
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Vacancies</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Contact us</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank">Privacy</a>
+            </li>
+            <li class="fit-item">
+              <a class="fit-item-src" href="#" target="_blank"
+                >Returns policy</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="footer-item">
+          <p class="footer-submit-text">Join our mailing list</p>
+          <div class="footer-submit">
+            <input
+              class="footer-input"
+              type="email"
+              placeholder="your@email.com"
+            />
+            <button class="footer-button" type="submit">Sign up</button>
+          </div>
+        </li>
+      </ul>
+      <div class="footer-block">
+        <p class="footer-copywrite">Copyright 2022 Avion LTD</p>
+        <ul class="footer-block-list">
+          <li>
+            <a
+              class="footer-icon-link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+            >
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-icon-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+            >
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-icon-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-icon-link"
+              href="https://www.skype.com"
+              target="_blank"
+            >
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-skype"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer-icon-link" href="https://x.com" target="_blank">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer-icon-link"
+              href="https://www.pinterest.com/"
+              target="_blank"
+            >
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

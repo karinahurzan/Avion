@@ -1,0 +1,509 @@
+body {
+  font-family: "Clash display", sans-serif;
+  color: #2a254b;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 390px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 80px;
+  }
+}
+
+.logo {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #22202e;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 390px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    max-width: 1440px;
+    padding: 0 28px;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cart-user {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .cart-user {
+    display: flex;
+  }
+}
+
+.nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 44px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .nav-item-src {
+    font-family: "Satoshi", sans-serif;
+    font-style: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #726e8d;
+    cursor: pointer;
+    transition: color 300ms ease-in-out;
+  }
+
+  .nav-item-src:hover,
+  .nav-item-src:focus {
+    color: #4e4d93;
+  }
+}
+
+.main-page {
+  padding-top: 36px;
+  padding-bottom: 55px;
+  background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 1440px) {
+  .main-page {
+    padding: 64px 188px 48px 188px;
+  }
+}
+
+.main-page-title {
+  font-style: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+.characteristic-list {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .characteristic-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #ebe8f4;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .main-page-title {
+    margin-bottom: 48px;
+  }
+
+  .products {
+    margin-bottom: 28px;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ebe8f4;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 22px;
+}
+
+.product-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 180px;
+}
+
+.product-title {
+  font-style: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.product-description {
+  font-family: "Satoshi", sans-serif;
+  font-style: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.product-price {
+  font-family: "Satoshi", sans-serif;
+  font-style: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.counter {
+  width: 122px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.counter-value {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.counter-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: #cac6da;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .counter {
+    width: 122px;
+  }
+}
+
+.product-total-price {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .product-total-price {
+    display: block;
+  }
+
+  .product-block {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: start;
+  }
+
+  .text-counter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 452px;
+    align-items: baseline;
+  }
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 16px;
+  margin-bottom: 7px;
+  justify-content: end;
+  align-items: center;
+}
+
+.total-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #4e4d93;
+}
+
+.total-price {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 1440px) {
+  .total {
+    margin-bottom: 12px;
+  }
+}
+
+.taxes {
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4e4d93;
+  text-align: end;
+  margin-bottom: 36px;
+}
+
+@media screen and (min-width: 1440px) {
+  .taxes {
+    margin-bottom: 16px;
+  }
+}
+
+.product-button {
+  background-color: #2a254b;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  transition: background-color 300ms ease-in-out;
+}
+
+@media screen and (min-width: 1440px) {
+  .product-button {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: auto;
+    display: block;
+    margin: 0 0 0 auto;
+  }
+}
+
+.product-button:hover,
+.product-button:focus {
+  background-color: #1e193e;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #2a254b;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 58px;
+    padding-bottom: 25px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 96px;
+  row-gap: 40px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #4e4d93;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-list {
+    padding-bottom: 48px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.footer-item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.fit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fit-item-src {
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  transition: color 300ms ease-in-out;
+}
+
+.fit-item-src:hover,
+.fit-item-src:focus {
+  color: #f9f9f9;
+}
+
+.footer-submit-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-submit {
+  display: flex;
+  gap: 0;
+}
+
+.footer-input {
+  width: 224px;
+  height: 56px;
+  background-color: rgba(249, 249, 249, 0.15);
+  padding-left: 32px;
+  border: none;
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+  outline: transparent;
+  transition: background-color 300ms ease-in-out;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-input {
+    width: 509px;
+  }
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  background-color: rgba(249, 249, 249, 0.3);
+}
+
+.footer-input::placeholder {
+  font-family: "Satoshi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+}
+
+.footer-button {
+  width: 118px;
+  height: 56px;
+  background-color: #ffffff;
+  color: #2a254b;
+  font-family: "Satoshi", sans-serif;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: background-color 300ms ease-in-out;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: #f9f9f9;
+}
+
+.footer-copywrite {
+  font-family: "Satoshi", sans-serif;
+  font-style: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-block {
+  margin-top: 20px;
+}
+
+.footer-block-list {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-block-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .footer-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .footer-icon {
+    fill: rgb(255, 255, 255);
+  }
+}
